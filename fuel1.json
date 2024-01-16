@@ -1,0 +1,36 @@
+{
+    "@id": "dtmi:com:wcdtrucking:digitaltrip:trip:truck;1",
+    "@type": "Interface",
+    "displayName": "fuel Model",
+    "@context": "dtmi:dtdl:context;2",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "id",
+            "schema": "string",
+            "description": "The Truck id",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "fuel",
+            "schema": "double",
+            "description": "fuel of car",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "maintenanceAlert",
+            "schema": "boolean",
+            "description": "car is in need of maintenance",
+            "writable": true
+        },
+        {
+            "@type": "Relationship",
+            "@id": "dtmi:com:wcdtrucking:digitaltrip:trip:truck:rel_has_drivers;1",
+            "name": "rel_has_drivers",
+            "displayName": "Has drivers",
+            "target": "dtmi:com:wcdtrucking:digitaltrip:trip:truck:driver;1"
+        }
+    ]
+}

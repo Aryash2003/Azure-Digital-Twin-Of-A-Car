@@ -1,0 +1,57 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:com:wcdtrucking:digitaltrip:trip:trailer:trailer_device;1",
+    "@type": "Interface",
+    "displayName": "Wheel Pressure and temp Information",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "id",
+            "schema": "string",
+            "description": "Pressure and temperature",
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "wheel_pressure_01",
+            "schema": "double",
+            "description": "Current measured pressure of wheel01",
+            "writable": true
+        },
+        {
+          "@type": "Property",
+          "name": "wheel_pressure_02",
+          "schema": "double",
+          "description": "Current measured pressure of wheel02",
+          "writable": true
+        },
+        {
+          "@type": "Property",
+          "name": "wheel_pressure_03",
+          "schema": "double",
+          "description": "Current measured pressure of wheel03",
+          "writable": true
+        },
+        {
+          "@type": "Property",
+          "name": "wheel_pressure_04",
+          "schema": "double",
+          "description": "Current measured pressure of wheel04",
+          "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "temperatureAlert",
+            "schema": "boolean",
+            "description": "outside of desired temperature alert",
+            "writable": true
+        },
+        {
+          "@type": "Property",
+          "name": "pressureAlert",
+          "schema": "boolean",
+          "description": "outside of desired pressure alert",
+          "writable": true
+      }
+    ]
+  }
